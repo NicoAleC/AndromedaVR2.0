@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="assets\verificar.cs">
+    <Files>
+      <File FileName="assets\verificar.cs" Line="23" Column="50" />
+      <File FileName="assets\cliente.cs" Line="82" Column="5" />
+      <File FileName="assets\GoogleVR\Demos\Scripts\GVRDemo\Teleport.cs" Line="1" Column="1" />
+      <File FileName="assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorConfig.cs" Line="1" Column="1" />
+      <File FileName="assets\Irfinal.cs" Line="1" Column="1" />
+      <File FileName="assets\CambiarEscena.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

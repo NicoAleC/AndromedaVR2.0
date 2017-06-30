@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.Linq;
 using System.Net;
@@ -7,6 +8,7 @@ using Newtonsoft.Json;
 
 public class verificar : MonoBehaviour {
 
+	public Text texto;
 	// Use this for initialization
 	void Start () {
 		
@@ -19,8 +21,14 @@ public class verificar : MonoBehaviour {
 	public bool VerificarUsuario(string nombre, string pass)
 	{
 		bool a = false;
-		var json = new WebClient().DownloadString(string.Format("http://192.168.42.157/slimapp/public/api/customer/verificar/{0}/{1}", nombre,pass));
+		try{
+		var json = new WebClient().DownloadString(string.Format("http://192.168.40.217/slimapp/public/api/customer/verificar/{0}/{1}", nombre,pass));
 		a = JsonConvert.DeserializeObject<bool> (json);
+			if(!a)
+				texto.text = "datos incorrectos";
+		}catch(Exception){
+			texto.text = "fallo en la conexion";
+		}
 		return a;
 	}
 }

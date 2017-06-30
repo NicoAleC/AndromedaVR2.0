@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Text))]
 public class canvaslist : MonoBehaviour {
-	private const string DISPLAY_TEXT_FORMAT = "nombre:\n{0}";
+	private const string DISPLAY_TEXT_FORMAT = "click en el boton verde para\nfinalizar las compras\nnombre:\n{0}";
 	private bool estado;
 	private Text textField;
 	private float fps = 60;

@@ -5,37 +5,80 @@ using System;
 using System.Linq;
 using System.Net;
 using Newtonsoft.Json;
+using UnityEngine.UI;
+using System.Timers;
 
 public class cliente : MonoBehaviour {
 	public static List<Producto> p;
 	public Listaofi lalista;
 	public static cliente client;
+	public Text anadir;
+	public Timer temporalizador;
+	public int tiempo;
 
-	void Awake (){
-		if (client == null) {
-			client = this;
-			DontDestroyOnLoad (gameObject);
-		} else if (client != this) {
-			Destroy (gameObject);
-		}
-	}
+
 	// Use this for initialization
 	void Start () {
 		p = new List<Producto>();
 		lalista = new Listaofi ();
+		anadir.enabled = false;
+		temporalizador = new Timer();
+		tiempo = 5;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (tiempo <= 0) {
+			anadir.enabled = false;
+			tiempo = 5;
+			temporalizador.Stop ();
+		}
 		
 	}
+
+	public void Crono()
+	{
+		temporalizador.Interval = 1000;
+		temporalizador.Start ();
+		temporalizador.Elapsed += (object sender, System.Timers.ElapsedEventArgs e) => tiempo--;
+	}
+
 	public void añadir(Producto n){
-		p.Add (n);
+		if (n.cantidad > 0) {
+			bool aux = false;
+			for (int i = 0; i < p.Count; i++) {
+				if (p [i].codproducto == n.codproducto) {
+					if (n.cantidad > p [i].cantidad) {
+						p [i].cantidad += 1;
+						anadir.text = "El producto se añadio\ncorrectamente";
+						anadir.enabled = true;
+						Crono ();
+					} else {
+						anadir.text = "Inventario insuficiente";
+						anadir.enabled = true;
+						Crono ();
+					}
+					aux = true;
+				}
+			}
+			if (!aux) {
+				Producto abc = new Producto();
+				abc.nombreprod = n.nombreprod;
+				abc.codproducto = n.codproducto;
+				abc.cantidad = 1;
+				abc.preciov = n.preciov;
+				p.Add (abc);
+				anadir.text = "El producto se añadio\ncorrectamente";
+				anadir.enabled = true;
+				Crono ();
+			}
+		}
 	}
 	public string mostrar(){
 		string aux = "";
 		for (int i = 0; i < p.Count; i++) {
-			aux = aux + p[i].nombreprod+ "\n";
+			aux = aux + p[i].nombreprod +": "+ p[i].cantidad+ "\n";
 		}
 		return aux;
 	}
@@ -77,7 +120,7 @@ public class Listaofi{
 	private List<Producto> m;
 	public Listaofi(){
 		//try{
-		var json = new WebClient().DownloadString("http://192.168.42.157/slimapp/public/api/productos/total");
+		var json = new WebClient().DownloadString("http://192.168.40.217/slimapp/public/api/productos/total");
 		m = JsonConvert.DeserializeObject<List<Producto>>(json);
 		//}catch(Exception){}
 	}

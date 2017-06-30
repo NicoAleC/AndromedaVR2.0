@@ -22,7 +22,7 @@ public class verificar : MonoBehaviour {
 	{
 		bool a = false;
 		try{
-		var json = new WebClient().DownloadString(string.Format("http://192.168.40.217/slimapp/public/api/customer/verificar/{0}/{1}", nombre,pass));
+		var json = new WebClient().DownloadString(string.Format("http://192.168.42.232/slimapp/public/api/customer/verificar/{0}/{1}", nombre,pass));
 		a = JsonConvert.DeserializeObject<bool> (json);
 			if(!a)
 				texto.text = "datos incorrectos";

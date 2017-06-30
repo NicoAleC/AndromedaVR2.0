@@ -32,7 +32,7 @@ public class cliente : MonoBehaviour {
 		if (tiempo <= 0) {
 			anadir.enabled = false;
 			tiempo = 5;
-			temporalizador.Stop ();
+			temporalizador.Stop();
 		}
 		
 	}
@@ -63,7 +63,7 @@ public class cliente : MonoBehaviour {
 				}
 			}
 			if (!aux) {
-				Producto abc = new Producto();
+				Producto abc = new Producto ();
 				abc.nombreprod = n.nombreprod;
 				abc.codproducto = n.codproducto;
 				abc.cantidad = 1;
@@ -73,6 +73,10 @@ public class cliente : MonoBehaviour {
 				anadir.enabled = true;
 				Crono ();
 			}
+		} else {
+			anadir.text = "Inventario insuficiente";
+			anadir.enabled = true;
+			Crono ();
 		}
 	}
 	public string mostrar(){
@@ -119,10 +123,10 @@ public class Producto{
 public class Listaofi{
 	private List<Producto> m;
 	public Listaofi(){
-		//try{
-		var json = new WebClient().DownloadString("http://192.168.40.217/slimapp/public/api/productos/total");
+		try{
+		var json = new WebClient().DownloadString("http://192.168.42.232/slimapp/public/api/productos/total");
 		m = JsonConvert.DeserializeObject<List<Producto>>(json);
-		//}catch(Exception){}
+		}catch(Exception){}
 	}
 	/*public string mostrar(){
 		string aux = "";

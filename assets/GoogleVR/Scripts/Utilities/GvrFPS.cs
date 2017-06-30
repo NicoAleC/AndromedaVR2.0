@@ -17,7 +17,7 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Text))]
 public class GvrFPS : MonoBehaviour {
-  private const string DISPLAY_TEXT_FORMAT = "nombre:\n{0}\nprecio:\n{1}\ncantidad:\n{2}";
+  private const string DISPLAY_TEXT_FORMAT = "click en el objeto\npara agregarlo\nnombre:\n{0}\nprecio:\n{1}\ncantidad:\n{2}";
 	private string nombre;
 	private string precio;
 	private string cantidad;

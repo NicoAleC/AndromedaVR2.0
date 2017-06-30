@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndromedaVR2.0", "Assembly-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndromedaVR2.0", "Assembly-CSharp.csproj", "{D03F1846-966D-4538-C605-B8727220655D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndromedaVR2.0", "Assembly-CSharp-Editor.csproj", "{65D002C6-F1F7-2383-70B7-D5381B2FF6A2}"
-EndProject
 Project("{3356B211-D6C6-B309-FCD0-BB96508E3B89}") = "AndromedaVR2.0", "Assembly-UnityScript-firstpass.unityproj", "{47E60867-C639-CF95-19B5-0C6E68FB259C}"
 EndProject
 Global
@@ -23,10 +21,6 @@ Global
 		{D03F1846-966D-4538-C605-B8727220655D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D03F1846-966D-4538-C605-B8727220655D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D03F1846-966D-4538-C605-B8727220655D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65D002C6-F1F7-2383-70B7-D5381B2FF6A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65D002C6-F1F7-2383-70B7-D5381B2FF6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65D002C6-F1F7-2383-70B7-D5381B2FF6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65D002C6-F1F7-2383-70B7-D5381B2FF6A2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{47E60867-C639-CF95-19B5-0C6E68FB259C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{47E60867-C639-CF95-19B5-0C6E68FB259C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47E60867-C639-CF95-19B5-0C6E68FB259C}.Release|Any CPU.ActiveCfg = Release|Any CPU

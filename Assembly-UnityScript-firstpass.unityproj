@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{878F07FE-B327-08E9-3378-0988B1B74F09}</ProjectGuid>
+    <ProjectGuid>{47E60867-C639-CF95-19B5-0C6E68FB259C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-UnityScript-firstpass</AssemblyName>
@@ -97,10 +97,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>C:/Users/Car/Documents/UNITY/AndromedaVR/assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>C:/Users/Car/Documents/UNITY/AndromedaVR2.0/assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/Car/Documents/UNITY/AndromedaVR/assets/Plugins/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Car/Documents/UNITY/AndromedaVR2.0/assets/Plugins/Newtonsoft.Json.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

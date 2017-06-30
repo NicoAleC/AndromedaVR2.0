@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{035F8630-41C9-EB96-858E-55857F83304E}</ProjectGuid>
+    <ProjectGuid>{65D002C6-F1F7-2383-70B7-D5381B2FF6A2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -141,19 +141,19 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>C:/Users/Car/Documents/UNITY/AndromedaVR/assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>C:/Users/Car/Documents/UNITY/AndromedaVR2.0/assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/Car/Documents/UNITY/AndromedaVR/assets/Plugins/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/Car/Documents/UNITY/AndromedaVR2.0/assets/Plugins/Newtonsoft.Json.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{2AD0D299-79EC-88E3-A02F-9BF0DC826C04}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{EE822AC9-CBBC-B6C0-A581-B269C569E409}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{878F07FE-B327-08E9-3378-0988B1B74F09}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{47E60867-C639-CF95-19B5-0C6E68FB259C}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{6D7273BC-205E-6FD3-185F-EECA7F205715}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{D03F1846-966D-4538-C605-B8727220655D}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
